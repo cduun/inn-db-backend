@@ -1,1 +1,1 @@
-Sample application packaged as a container
+Independant NickName Database (INNDB)

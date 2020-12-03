@@ -1,7 +1,7 @@
 
 
   
-const welcomeMessage = "Welcome to IBM Cloud DevOps using containers. Let\'s go use the Continuous Delivery Service";
+const welcomeMessage = "Independant Nickname Database. Welcome to the inn.";
 const portMessage = "Application Running on port";
 
 const getWelcomeMessage = () => {

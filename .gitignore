@@ -1,2 +1,37 @@
-/node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
 
+# Runtime data
+pids
+*.pid
+*.seed
+
+# node-waf configuration
+.lock-wscript
+
+# Dependency directories
+node_modules
+jspm_packages
+coverage
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Local env
+.cfignore
+
+
+
+# bx-key
+bx-api-key
+
+genApidoc
+
+.idea
+
+# Mac finder files
+.DS_store

@@ -1,0 +1,9 @@
+applications:
+- name: inndb
+  memory: 512M
+  instances: 1
+  disk_quota: 1024M
+  env:
+    STAGE: prod
+    LOG_LEVEL: info
+    SECRET: €22&DuffIsTheMostEvenDudeThatEverWas96%5248

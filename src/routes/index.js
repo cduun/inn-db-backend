@@ -9,6 +9,7 @@ const { checkSchema } = require('express-validator');
 
 //test
 router.get('/yo', userCtrl.helloWorld);
+router.get('/error', nickCtrl.helloError);
 
 // login for users
 router.post('/login', vc.chkStr('username'), vc.chkStr('password'), vc.validate, authCtrl.login);

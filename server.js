@@ -54,8 +54,25 @@ app.use(function (req, res, next) {
   }
 });
 
-app.get("/ping", (req, res) => res.send("all good"));
 app.use('/api/v1', require('./src/routes'));
+
+app.use((err, req, res, next) => {
+  if (err) {
+    logger.error(err.message)
+
+    // Set 500 server code error if statuscode not set
+    if (!err.statusCode) {
+      err.statusCode = 500
+    } 
+    
+    return res.status(err.statusCode).send({
+      statusCode: err.statusCode,
+      message: err.message
+    })
+  }
+
+  next()
+})
 let port = process.env.PORT || 3000
 server.listen(port, () => {
   logger.info('server started on ' + port);
